@@ -8,10 +8,13 @@ while a==1:
     resultado=hora*60
     print("\n{} horas são {} minutos.\n".format(hora, resultado))
  elif(opcao1==2):
-  hora=int(input("\nDigite o valor para hora: "))
-  resultado=hora*3600
-  print("\n{} horas são {} segundos\n".format(hora,resultado))
+    hora=int(input("\nDigite o valor para hora: "))
+    resultado=hora*3600
+    print("\n{} horas são {} segundos\n".format(hora,resultado))
  elif(opcao1==3):
-        hora=int(input("\nDigite o valor para hora: "))
-        resultado=hora*3600
-        print("\n{} horas são {} segundos\n".format(hora,resultado))
+    minutos=int(input("\nConvertendo Minutos para Horas:\nDigite o valor dos minutos: "))
+    resultado=minutos/60
+    if(resultado<=1):
+        print("\n*** Resultado ***\n{} minutos3 é {} hora\n".format(minutos, resultado))
+    else:
+        print("\n*** Resultado ***\n{} minutos são {} horas\n".format(minutos,resultado))
