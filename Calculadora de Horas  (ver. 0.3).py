@@ -1,4 +1,7 @@
-#fazer uma função para voltar no menu/ fazer uma nova operação ou não...
+#versões futuras:
+#fazer uma função para voltar no menu
+#fazer uma nova operação ou não...
+#histórico
 a=0
 print("*** calculadora de horas ver.0.2 (alpha)***")
 while (a==0):
@@ -10,7 +13,7 @@ while (a==0):
                  "Digite 0 para fechar: "))
 #0 - Fechar o Programa:
  if(opcao==0):
-  print("\nObrigado por usar o Calculadora de Horas ver.0.2 (alpha)")
+  print("\nObrigado por usar o Calculadora de Horas ver.0.3 (alpha)")
   a=a+1
 #1 - Horas para Minutos:
  if (opcao==1):
@@ -44,7 +47,7 @@ while (a==0):
  if (opcao==4):
   minutos=int(input("\n--- Convertendo Minutos para Segundos ---\n   Digite o valor dos Minutos: "))
   resultado=minutos*60
-  if (minutos == 1):
+  if (minutos==1):
    print("\n*** Resultado ***\n{} minuto são {} segundos\n".format(minutos, resultado))
   elif (resultado==1):
    print("\n*** Resultado ***\n{} minuto é {} segundo\n".format(minutos, resultado))
