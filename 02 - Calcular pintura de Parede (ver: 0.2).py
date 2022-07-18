@@ -1,7 +1,8 @@
 #Versões futuras: Histórico de cálculos e tradução para inglês
-tw=0 #Trava o While
+#Patch note: Corrigido o bug de digitar não e continuar o programa
+tw=0
 print("*"*12,"Calcular área da parede para pintura", "*"*12)
-while tw>=0:
+if tw>=0:
  largura=float(input("\nDigite a Largura da parede: "))
  altura=float(input("Digite a Altura da parede: "))
  area=largura*altura
@@ -10,7 +11,7 @@ while tw>=0:
  litro=area/rendimento #Exemplo a cada 2m de tinta, preciso de 1 litro
  print("Para você pintar essa parede, você precisa de {} litros de tintas\n".format(litro))
  decisao=str(input("Deseja continuar? Digite Sim ou Não: "))
- if decisao=="Sim" or "sim":
-  tw=tw+1
+ if(decisao=="Sim" or "sim"):
+   tw=tw+1
  else:
-   tw=-1
+   tw=tw-tw
