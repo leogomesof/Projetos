@@ -1,3 +1,4 @@
+#Versões futuras: Histórico de cálculos e tradução para inglês
 tw=0 #Trava o While
 print("*"*12,"Calcular área da parede para pintura", "*"*12)
 while tw>=0:
