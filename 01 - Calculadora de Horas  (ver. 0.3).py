@@ -3,14 +3,14 @@
 #fazer uma nova operação ou não...
 #histórico
 a=0
-print("*** calculadora de horas ver.0.3 (alpha)***")
+print("*** Calculadora de horas ver.0.3 (alpha)***")
 while (a==0):
  opcao=int(input("Digite a opção:\n"
                  "1 - Converter Horas para Minutos\n"
                  "2 - Converter Horas para Segundos\n"
                  "3 - Converter Minutos para Horas\n"
                  "4 - Converter Minutos para Segundos\n"
-                 "Digite 0 para fechar: "))
+                 "Digite 0 para fechar:\n"))
 #0 - Fechar o Programa:
  if(opcao==0):
   print("\nObrigado por usar o Calculadora de Horas ver.0.3 (alpha)")
