@@ -87,9 +87,12 @@ else:
  confirma=pyautogui.confirm("Para digitar sua matrícula aperte OK\nCaso já tenha aberto o NEAD aperte Cancel")
  if confirma=="OK":
   data_input()
-  chrm_NEAD()
-  data_write()
-  bem_vindo()
+  if a==None or b==None:
+   print("")
+  else:  
+   chrm_NEAD()
+   data_write()
+   bem_vindo()
  elif confirma == "Cancel":
   chrm_NEAD()
   nead_login()
