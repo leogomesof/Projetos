@@ -13,12 +13,12 @@ def data_input():
  global a
  a=pyautogui.password("Digite a sua matrícula: ",mask="*")
  if a==None:
-  pyautogui.alert("Obrigado por usar o NEAD Opener 1.0")
+  pyautogui.alert("Obrigado por usar o NEAD Opener 1.3")
  else:
   global b
   b=pyautogui.password('Digite a sua senha: ',mask="*")
   if b==None:
-   pyautogui.alert("Obrigado por usar o NEAD Opener 1.0")
+   pyautogui.alert("Obrigado por usar o NEAD Opener 1.3")
 
 #bloco de função para abrir o chrome e acessar o nead
 def chrm_NEAD():
@@ -73,14 +73,14 @@ def nav_acessoSL():
 
 #bloco de função para agradecimento
 def obrigado():
-  pyautogui.alert("Obrigado por usar o NEAD Opener 1.0\nAté logo!")
+  pyautogui.alert("Obrigado por usar o NEAD Opener versão 1.3\nAté logo!")
 
 #bloco de função para boas vindas
 def bem_vindo():
  pyautogui.alert("Bem-vindo ao NEAD-UGB\nObrigado por usar o programa!")
 
 #início da programação
-D1=pyautogui.confirm("Bem-vindo ao NEAD Opener 1.0.\nAperte OK para continuar ou Cancel para sair")
+D1=pyautogui.confirm("Bem-vindo ao NEAD Opener 1.3\nAperte OK para continuar ou Cancel para sair")
 if D1=="Cancel":
  obrigado()
 else:
