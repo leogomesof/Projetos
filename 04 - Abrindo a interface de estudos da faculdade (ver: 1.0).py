@@ -11,7 +11,7 @@ import time
 #bloco de função para inserir os dados
 def data_input():
  global a
- a=pyautogui.prompt("Digite a sua matrícula: ")
+ a=pyautogui.password("Digite a sua matrícula: ",mask="*")
  if a==None:
   pyautogui.alert("Obrigado por usar o NEAD Opener 1.0")
  else:
