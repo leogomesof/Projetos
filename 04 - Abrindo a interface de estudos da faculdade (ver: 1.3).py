@@ -1,6 +1,6 @@
 #***Atenção***
 #***Para usar esse programa, você precisa do pyautogui instalado na tua máquina***
-#***Caso não tenha jogue no seu terminal esse comando: "instal pip pyautogui" sem áspas e execute o programa***
+#***Caso não tenha jogue no seu terminal esse comando: "install pip pyautogui" sem áspas e execute o programa***
 
 #Esses valores de pixeis no .click() são de acordo com a minha resolução (1920x1080)
 #Para ajustar a resolução, recomendo rodar um time.sleep(4) print(pyautogui.position()) para descobrir a posição do mouse e colocar no .click()
