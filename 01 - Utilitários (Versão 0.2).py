@@ -14,7 +14,7 @@ global menu_unt_conv
 global mp
 
 def mp():
- tst=int(input("*** Utilitários ver:0.1 ***\n1 - Conversão de Horas\n2 - Conversão de Temperatura\n3 - Conversão de Unidades de Medida\n"))
+ tst=int(input("*** Utilitários v0.2 ***\n1 - Conversão de Horas\n2 - Conversão de Temperaturas\n3 - Conversão de Unidades de Medida\n"))
  if tst==1:
   menu_tm_conv()
  elif tst==2:
@@ -22,31 +22,52 @@ def mp():
  elif tst==3:
   menu_unt_conv()
 
-def menu_tmp_conv():
- print("Em desenvolvimento")
- mp()
+def thnks_tmp():
+ print("\n*** Obrigado por usar o Conversor de Temperaturas v0.1 ***")
+ mp()   
 
+def menu_tmp_conv():
+ print("\n*** Conversor de Temperaturas v0.1*** Em desenvolvimento")
+ op_tmp=int(input("*** Digite a opção e pressione ENTER ***\n1 - Converter Celsius para Fahrenheit\nDigite 0 para voltar ao menu:\n"))
+ if op_tmp==0:
+  thnks_tmp()
+  mp()
+ elif op_tmp==1:
+    cel_fah()
+
+def cel_fah():
+ print("\n--- Convertendo Celsius para Fahrenheit ---")
+ celsius=float(input("Insira o valor da temperatura em °C: "))
+ fahrenheit=(1.8*celsius)+32
+ print("{:.2f}°C são {:.2f}°F".format(celsius,fahrenheit))
+
+ dec_cel=int(input("Deseja fazer a conversão novamente?\nDigite 1 - Sim ou 2 - Não"))
+ if dec_cel==2:
+  menu_tmp_conv()
+ elif dec_cel==1:
+  cel_fah()
+    
 def menu_unt_conv():
  print("Em desenvolvimento")
  mp()
 
 def menu_tm_conv(): #menu das conversões de horas
- opcao=int(input("*** Digite a opção e pressione ENTER: ***\n1 - Converter Horas para Minutos\n2 - Converter Horas para Segundos\n3 - Converter Minutos para Horas\n4 - Converter Minutos para Segundos\nDigite 0 para retornar ao menu\n"))
- if(opcao==0): #0 - Fechar o Programa:
+ op_tm=int(input("*** Digite a opção e pressione ENTER ***\n1 - Converter Horas para Minutos\n2 - Converter Horas para Segundos\n3 - Converter Minutos para Horas\n4 - Converter Minutos para Segundos\nDigite 0 para retornar ao menu\n"))
+ if(op_tm==0): #0 - Fechar o Programa:
   thnks()
   mp()
- elif (opcao==1): #1 - Horas para Minutos:
+ elif (op_tm==1): #1 - Horas para Minutos:
   hr_mnt()
- elif (opcao==2): #2 - Horas para Segundos:
+ elif (op_tm==2): #2 - Horas para Segundos:
   hr_sgd()
- elif (opcao==3): #3 - Minutos para Horas:
+ elif (op_tm==3): #3 - Minutos para Horas:
   mnt_hr()
- elif (opcao==4): #4 - Minutos para Segundos:
+ elif (op_tm==4): #4 - Minutos para Segundos:
   mnt_sgd()
  print("")
 
 def thnks(): #Agradecimentos
- print("\nObrigado por usar o Calculadora de Horas ver.0.5 (beta)")
+ print("\nObrigado por usar o Calculadora de Horas v0.5 (beta)")
 
 def mnt_sgd(): #Minutos>Segundos
  minutos=float(input("\n--- Convertendo Minutos para Segundos ---\n   Digite o valor do Minuto: "))
