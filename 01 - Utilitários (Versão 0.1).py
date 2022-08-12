@@ -62,7 +62,7 @@ def mnt_sgd(): #Minutos>Segundos
  else:
   menu_tm_conv()
 
-def mnt_hr():
+def mnt_hr(): #Minutos>Horas
  minutos=int(input("\n--- Convertendo Minutos para Horas ---\n  Digite o minuto: "))
  resultado=round(minutos/60,2)
  if (minutos==1):
@@ -74,11 +74,11 @@ def mnt_hr():
 
  denovo=int(input("Deseja fazer essa operação novamente?\nDigite 1 - Sim ou 2 - Não\n"))
  if denovo==1:
-  mnt_hr() #linha ok
+  mnt_hr() 
  else:
   menu_tm_conv()
 
-def hr_sgd():
+def hr_sgd(): #Horas>Segundos
  hora=float(input("\n--- Convertendo Horas para Segundos ---\n   Digite a hora: "))
  resultado=hora*3600
  if (resultado == 1) or (hora==1):
@@ -88,11 +88,11 @@ def hr_sgd():
  
  denovo=int(input("Deseja fazer essa operação novamente?\nDigite 1 - Sim e 2 - Não\n"))
  if denovo==1:
-  hr_sgd() #linha ok
+  hr_sgd() 
  else:
   menu_tm_conv()
 
-def hr_mnt():
+def hr_mnt(): #Horas>Minutos
  hora=float(input("\n--- Convertendo Hora para Minuto ---\n   Digite as horas: "))
  resultado=hora*60
  if (hora==1):
