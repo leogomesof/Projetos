@@ -1,3 +1,4 @@
+#Código descontinuado por conta do Utilitários, mas serviu de base para fazer adições no programa novo
 Versões futuras: #Função para chamar a decisão
 tw=0
 print("Calculadora de temperaturas:")
