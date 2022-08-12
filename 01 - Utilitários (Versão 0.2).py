@@ -1,7 +1,12 @@
-#Utilitários versão 0.1: criação da função mp para escolher qual cálculo realizar
+#Patch notes 12/08:
+#Utilitários versão 0.1: Criação da função mp para escolher qual cálculo realizar
+#Utilitários versão 0.2: Criação da aba Conversor de temperaturas
+
 #Conversão de Horas versão 0.5: Correção de variáveis inteiras para pontos flutuantes e remoção de vários if's por bloco de funções
-#Conversão de Temperaturas: Em desenvolvimento
-#Conversão  de Unidades de Medida: em desenvolvimento
+
+#Conversor de Temperaturas versão 0.1: Adicionado a conversão de Celsius para Fahrenheit
+
+#Conversão de Unidades de Medida: em desenvolvimento
 
 #versões futuras:
 #1 - fazer uma função para voltar no menu: ok (cdh0.5 e u0.1)
