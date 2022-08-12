@@ -9,6 +9,8 @@
 #3 - histórico de cálculos
 
 global menu_tm_conv
+global menu_tmp_conv
+global menu_unt_conv
 global mp
 
 def mp():
@@ -44,7 +46,7 @@ def menu_tm_conv(): #menu das conversões de horas
  print("")
 
 def thnks(): #Agradecimentos
- print("\nObrigado por usar o Calculadora de Horas ver.0.5 (alpha)")
+ print("\nObrigado por usar o Calculadora de Horas ver.0.5 (beta)")
 
 def mnt_sgd(): #Minutos>Segundos
  minutos=float(input("\n--- Convertendo Minutos para Segundos ---\n   Digite o valor do Minuto: "))
